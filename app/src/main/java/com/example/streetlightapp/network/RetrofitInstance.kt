@@ -25,7 +25,7 @@ interface RetrofitInstance {
 
 
     companion object {
-        val session = BaseApplication.context?.let { SessionManagementActivity(it) }
+        val session = context?.let { SessionManagementActivity(it) }
         var client = OkHttpClient.Builder().addInterceptor { chain ->
             val newRequest: Request = chain.request().newBuilder()
                 .addHeader(

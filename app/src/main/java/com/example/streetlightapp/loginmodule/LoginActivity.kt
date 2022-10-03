@@ -1,5 +1,6 @@
 package com.example.streetlightapp.loginmodule
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -25,6 +26,8 @@ class LoginActivity : AppCompatActivity() {
             viewModel = ViewModelProvider(this)[LoginViewModel::class.java]
             initView()
         } else {
+            Toast.makeText(this, "logged in", Toast.LENGTH_SHORT)
+                .show()
 
         }
     }
@@ -60,17 +63,17 @@ class LoginActivity : AppCompatActivity() {
                             .show()
 
 
-                        sessionManagementActivity.insertData(this, Constants.API_TOKEN, it.data?.token)
+                        sessionManagementActivity.insertData(this,Constants.API_TOKEN, it.data?.token)
                         sessionManagementActivity.createLoginSession(
                             it.data?.token,
                             it.data?.user!!.name
                         )
                         Thread.sleep(1200)
-                        Log.d("TAG", "initView: ${it.data?.token}")
+                        Log.d("TAG", "initView: ${it.data.token}")
                         binding.progressbar.visibility = View.GONE
 //                        val intent = Intent(this, ChooserActivity::class.java)
 //                        startActivity(intent)
-                        finish()
+//                        finish()
                         binding.loginLayout.isEnabled = true
 
                     } else {

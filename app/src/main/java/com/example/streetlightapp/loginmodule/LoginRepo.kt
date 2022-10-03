@@ -12,7 +12,7 @@ class LoginRepo {
     fun userLogin(email:String,pass:String): LiveData<LoginUserModel> {
         val mutableLiveDetailData: MutableLiveData<LoginUserModel> = MutableLiveData()
         val call = RetrofitInstance.create().userLogin(email,pass)
-        call?.enqueue(object : Callback, retrofit2.Callback<LoginUserModel?> {
+        call.enqueue(object : Callback, retrofit2.Callback<LoginUserModel?> {
             override fun onResponse(
                 call: Call<LoginUserModel?>,
                 response: Response<LoginUserModel?>,
@@ -29,7 +29,7 @@ class LoginRepo {
             }
 
             override fun onFailure(call: Call<LoginUserModel?>, t: Throwable) {
-                Log.d("TAG", "onFailure: ")
+                Log.d("Hello", "onFailure:$t")
             }
 
         })
