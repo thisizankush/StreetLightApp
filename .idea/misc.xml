@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projects/app/src/main/res/drawable/rectangle_border.xml" value="0.1055" />
+        <entry key="..\:/Projects/app/src/main/res/layout/activity_chooser.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects/app/src/main/res/layout/activity_get_imei_number.xml" value="0.23229166666666667" />
         <entry key="..\:/Projects/app/src/main/res/layout/login.xml" value="0.264" />
       </map>
     </option>

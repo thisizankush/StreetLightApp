@@ -1,8 +1,11 @@
 package com.example.streetlightapp.utils
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import com.example.streetlightapp.BaseApplication
+import com.example.streetlightapp.loginmodule.LoginActivity
+import com.example.streetlightapp.services.LocationService
 
 
 class SessionManagementActivity(  // Context
@@ -62,18 +65,18 @@ class SessionManagementActivity(  // Context
     /**
      * Clear session details
      */
-//    fun logoutUser() {
-//        // Clearing all data from Shared Preferences
-//        editor.clear()
-//        editor.commit()
-////        _context.stopService(Intent(_context, LocationService::class.java))
-////        // After logout redirect user to Loing Activity
-////        val i = Intent(_context, LoginActivity::class.java)
-//        // Closing all the Activities
-//        // Staring Login Activity
-//        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-//        _context.startActivity(i)
-//    }
+    fun logoutUser() {
+        // Clearing all data from Shared Preferences
+        editor.clear()
+        editor.commit()
+        _context.stopService(Intent(_context, LocationService::class.java))
+        // After logout redirect user to Loing Activity
+        val i = Intent(_context, LoginActivity::class.java)
+        // Closing all the Activities
+        // Staring Login Activity
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        _context.startActivity(i)
+    }
 
     fun gettoken(): String{
         var token =
