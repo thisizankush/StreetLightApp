@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:text="Details Of Battery"
+                    android:fontFamily="@font/roboto_italic"
+                    android:textColor="@color/black"
+                    android:textFontWeight="700" />
+
+                <EditText
+                    android:id="@+id/tvThree"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/black"
+                    android:background="@drawable/rectangle_border"
+                    android:hint="Solar System" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#000000"
+                android:visibility="gone"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOned"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="@font/roboto_italic"
+                    android:text="Type of Battery"
+                    android:textColor="@color/black"
+                    android:textFontWeight="700" />
+
+                <EditText
+                    android:id="@+id/tvThreeda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/black"
+                    android:background="@drawable/rectangle_border"
+                    android:hint="WAF457" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAgency"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:text="Sr. no of Battery"
+                    android:fontFamily="@font/roboto_italic"
+                    android:textColor="@color/black"
+                    android:textFontWeight="700" />
+
+                <EditText
+                    android:id="@+id/edAgency"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/black"
+                    android:background="@drawable/rectangle_border"
+                    android:hint="BREDA" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:text="Make of Battery"
+                    android:fontFamily="@font/roboto_italic"
+                    android:textColor="@color/black"
+                    android:textFontWeight="700" />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:prompt="@string/block"
+                    android:spinnerMode="dialog"
+                    android:background="@drawable/rectangle_border"
+                    android:id="@+id/spin1"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBeneficiary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="@font/roboto_italic"
+                    android:text="Model No:"
+                    android:textColor="@color/black"
+                    android:textFontWeight="700" />
+
+                <EditText
+                    android:id="@+id/edBeneficiary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@color/black"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rectangle_border"
+                    android:hint="Sushil" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:padding="3dp"
+                    android:fontFamily="@font/roboto_italic"
+                    android:text="Battery Voltage at the time of installation"
+                    android:textColor="@color/black"
+                    android:textFontWeight="700" />
+
+                <EditText
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@color/black"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rectangle_border"
+                    android:hint="Sushil" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:fontFamily="@font/roboto_italic"
+                    android:text="Cell Voltage"
+                    android:textColor="@color/black"
+                    android:textFontWeight="700" />
+
+                <EditText
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@color/black"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rectangle_border"
+                    android:hint="Sushil" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:text="Year Of Manufacturing"
+                    android:fontFamily="@font/roboto_italic"
+                    android:textColor="@color/black"
+                    android:textFontWeight="700" />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:spinnerMode="dialog"
+                    android:background="@drawable/rectangle_border"
+                    android:id="@+id/spin"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

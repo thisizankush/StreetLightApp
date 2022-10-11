@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Streetlight</string>
+    <string name="dis">District</string>
+    <string name="block">Blocks</string>
+    <string name="panch">Panchayat</string>
+    <string name="ward">Ward</string>
+    <string name="ple">Pole Id</string>
+    <string-array name="svp">
+        <item>Select SVP Type</item>
+        <item>Mono crysalline</item>
+        <item>Poly</item>
+    </string-array>
+    <string-array name="yesno">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>NO</item>
+    </string-array>
+</resources>
