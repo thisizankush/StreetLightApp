@@ -6,8 +6,7 @@
     <string name="ward">Ward</string>
     <string name="ple">Pole Id</string>
     <string-array name="svp">
-        <item>Select SVP Type</item>
-        <item>Mono crysalline</item>
+        <item>Mono crystalline</item>
         <item>Poly</item>
     </string-array>
     <string-array name="yesno">

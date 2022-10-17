@@ -1,6 +1,5 @@
 package com.android.streetlight.services.network
 
-import android.content.Context.MODE_PRIVATE
 import com.android.streetlight.services.*
 import com.android.streetlight.services.BaseApplication.Companion.context
 import com.android.streetlight.services.assetModule.AssetDataModel
@@ -10,10 +9,10 @@ import com.android.streetlight.services.blockModule.BlockDataModel
 import com.android.streetlight.services.districtModule.DistrictDataModel
 import com.android.streetlight.services.imeiNumberModule.ImeiResponse
 import com.android.streetlight.services.loginModule.LoginUserModel
-import com.android.streetlight.services.loginModule.LoginUserModel.Data.User
+import com.android.streetlight.services.luminaryWithSerialModule.LuminaryWithSerialResponse
 import com.android.streetlight.services.panchayatModule.PanchayatDataModel
-import com.android.streetlight.services.poleModule.poleDataModel
 import com.android.streetlight.services.poleModule.poleResponseModel
+import com.android.streetlight.services.serialListModule.SerialListModel
 import com.android.streetlight.services.subVenderModule.SubVendorDataModel
 import com.android.streetlight.services.uploadImageModule.UploadImageResponse
 import com.android.streetlight.services.utils.Constants
@@ -29,7 +28,6 @@ import okhttp3.Request
 import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.*
 
@@ -120,9 +118,11 @@ interface RetrofitInstance {
         @Query("id") id: String, @Query("serial_number") serial_number: String
     ): Call<InventoryModuleResponseModel>
 
+    @GET(Constants.GET_SERIAL_LIST)
+    fun getSerialList(): Call<SerialListModel>
 
-
-
+    @GET(Constants.GET_SERIAL_LIST)
+    fun getLuminaryWithSerial(@Query("serial_number") serial_number: String): Call<LuminaryWithSerialResponse>
 
     @Multipart
     @POST(Constants.UPLOAD_IMAGE)
@@ -151,7 +151,7 @@ interface RetrofitInstance {
             val retrofit = Retrofit.Builder()
                 .client(client)
                 .addConverterFactory(MoshiConverterFactory.create(moshi))
-                .baseUrl(Constants.BASE_URL)
+                .baseUrl(Constants.DEV_BASE_URL)
                 .build()
             return retrofit.create(RetrofitInstance::class.java)
 

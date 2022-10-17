@@ -20,4 +20,5 @@ object Constants {
     const val GET_BATTERY_INVENTORY= "api/v1/inventory/getBatteryInventoryMobile"
     const val GET_SOLAR_INVENTORY = "api/v1/inventory/getPvmoduleInventoryMobile"
     const val GET_LUMINARY_INVENTORY = "api/v1/inventory/getLuminaryInventoryMobile"
+    const val GET_SERIAL_LIST = "api/v1/luminaryDetails/getluminaryDetailsMobile"
 }

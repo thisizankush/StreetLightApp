@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
                     android:text="System Details"
-                    android:textColor="@color/black"
+                    android:textColor="#4CA85E"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -500,8 +500,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto"
                         android:background="@drawable/grey_outline"
-                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                        android:hint="Beneficiary Name"
+                        android:hint="Beneficiary Name(लाभुक का नाम)"
                         android:singleLine="true"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
@@ -528,8 +527,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto"
                         android:background="@drawable/grey_outline"
-                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
-                        android:hint="Beneficiary Address/Nearby Location"
+                        android:hint="Beneficiary Address(लाभुक का पता)"
                         android:singleLine="true"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
@@ -1177,7 +1175,7 @@
                             android:text="Installer Company"
                             android:fontFamily="@font/roboto"
                             android:textSize="20sp"
-                            android:textColor="@color/black"
+                            android:textColor="#4CA85E"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatSpinner
@@ -1212,9 +1210,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/grey_outline"
-                            android:hint="Installation Person"
+                            android:hint="Technician(तकनीशियन)"
                             android:fontFamily="@font/roboto"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
                             android:id="@+id/installperson"
                             android:singleLine="true"
                             android:textColor="@color/black"
@@ -1313,12 +1310,12 @@
                         android:layout_marginTop="10dp"
                         android:textSize="20sp"
                         android:layout_marginStart="5dp"
-                        android:textColor="@color/black"
+                        android:textColor="#4CA85E"
                         android:fontFamily="@font/roboto"
                         android:textStyle="bold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="PV Module Details"/>
+                        android:text="PV Module Details(सौर पेनल विवरण)"/>
 
 
                     <LinearLayout
@@ -1333,7 +1330,7 @@
                         <TextView
                             android:layout_width="0dp"
                             android:layout_weight="0.75"
-                            android:text="Manufacturer"
+                            android:text="Manufacturer (उत्पादक)"
                             android:textStyle="normal"
                             android:fontFamily="@font/roboto"
                             android:textColor="@color/black"
@@ -1374,7 +1371,7 @@
                             android:layout_weight="0.75"
                             android:visibility="visible"
                             android:textStyle="normal"
-                            android:text="Serial Number"
+                            android:text="Serial Number(क्रमिक संख्या)"
                             android:fontFamily="@font/roboto"
                             android:textSize="18sp"
                             android:textColor="@color/black"
@@ -1541,8 +1538,10 @@
                             android:fontFamily="@font/roboto"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1.25"
+                            tools:listitem="@layout/spinner_item"
                             android:singleLine="true"
                             android:id="@+id/spvType"
+                            style="@style/AppSpinner"
                             android:entries="@array/svp"
                             android:background="@drawable/grey_outline"
                             android:textColor="@color/black"
@@ -1615,11 +1614,11 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="5dp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="#4CA85E"
                         android:layout_width="match_parent"
                         android:fontFamily="@font/roboto"
                         android:layout_height="wrap_content"
-                        android:text="Luminaire Details"/>
+                        android:text="Luminaire Details(ल्यूमिनेरी विवरण)"/>
 
 
                     <LinearLayout
@@ -1627,13 +1626,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="10dp"
+                        android:visibility="gone"
                         android:layout_marginEnd="10dp"
                         android:weightSum="2">
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_weight="0.75"
-                            android:text="Manufacturer"
+                            android:text="Manufacturer   (उत्पादक)"
                             android:textStyle="normal"
                             android:textColor="@color/black"
                             android:fontFamily="@font/roboto"
@@ -1675,7 +1675,7 @@
                             android:layout_width="wrap_content"
                             android:layout_weight="0.75"
                             android:visibility="visible"
-                            android:text="Serial Number"
+                            android:text="Serial Number(क्रमिक संख्या)"
                             android:textStyle="normal"
                             android:fontFamily="@font/roboto"
                             android:textSize="18sp"
@@ -1877,11 +1877,11 @@
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:layout_marginStart="5dp"
-                        android:textColor="@color/black"
+                        android:textColor="#4CA85E"
                         android:fontFamily="@font/roboto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Battery Details"/>
+                        android:text="Battery Details(बैटरी विवरण)"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1894,7 +1894,7 @@
                         <TextView
                             android:layout_width="0dp"
                             android:layout_weight="0.75"
-                            android:text="Manufacturer"
+                            android:text="Manufacturer  (उत्पादक)"
                             android:fontFamily="@font/roboto"
                             android:textStyle="normal"
                             android:textSize="18sp"
@@ -1934,7 +1934,7 @@
                             android:layout_weight="0.75"
                             android:visibility="visible"
                             android:textStyle="normal"
-                            android:text="Serial Number"
+                            android:text="Serial Number(क्रमिक संख्या)"
                             android:fontFamily="@font/roboto"
                             android:textSize="20sp"
                             android:textColor="@color/black"
@@ -2210,8 +2210,8 @@
                             android:layout_weight=".75"
                             android:paddingStart="20dp"
                             android:fontFamily="@font/roboto"
-                            android:text="Data Lock"
-                            android:textColor="@color/black"
+                            android:text="Data Lock    (डेटा लॉक)"
+                            android:textColor="#4CA85E"
                             android:textSize="20sp" />
 
                         <Switch
@@ -2244,14 +2244,13 @@
                             android:layout_marginStart="12dp"
                             android:layout_marginEnd="12dp"
                             android:src="@drawable/compass_2"/>
-                        <ImageView
+                        <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/logo"
-                            android:layout_width="155dp"
-                            android:layout_height="90dp"
+                            android:layout_width="100dp"
+                            android:layout_height="65dp"
                             android:visibility="gone"
-                            android:scaleType="centerCrop"
-                            android:adjustViewBounds="true"
                             android:layout_marginTop="2dp"
+                            android:layout_alignParentTop="true"
                             android:layout_alignParentEnd="true"
                             android:layout_marginEnd="2dp"
                             android:src="@drawable/logo"/>
@@ -2287,7 +2286,7 @@
                        android:clickable="true"
                        android:visibility="gone"
                        android:layout_marginTop="10dp"
-                       android:src="@drawable/upload"
+                       android:src="@drawable/img"
                        android:focusable="true" />
 
 

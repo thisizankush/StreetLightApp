@@ -38,6 +38,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import androidx.core.view.children
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.android.streetlight.R
@@ -140,6 +141,11 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
     lateinit var moduleViewModel: ModuleViewModel
     var subVendorAdapter: ArrayAdapter<SubVendorDataModel.Data.Data.Subvendor>? = null
     var imeinum = ""
+    var casing = ""
+    var model_number = ""
+    var height = ""
+    var wattage = ""
+    var leds = ""
     lateinit var ss: String
     val c = Calendar.getInstance()
     val year = c.get(Calendar.YEAR)
@@ -234,6 +240,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
 
         actionBar!!.customView = actionBarLayout
         actionBar!!.setBackgroundDrawable(ColorDrawable(Color.WHITE))
+        binding.apply {
+            spvType.isEnabled = false
+        }
         dataLock = binding.switchUi.isChecked
         binding.switchUi.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
@@ -250,6 +259,8 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                     beneficiaryname.isEnabled = false
                     installperson.isEnabled = false
                     vendor.isEnabled = false
+
+
                 }
 
 
@@ -264,6 +275,8 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                 vendor.isClickable = true
                 beneficiaryAddress.isEnabled = true
                 beneficiaryname.isEnabled = true
+                installperson.isEnabled = true
+                vendor.isEnabled = true
                 binding.retake.visibility = View.GONE
                 binding.mainImageContainer.visibility = View.GONE
                 binding.details.setText("")
@@ -288,6 +301,17 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
         binding.installationdateAsset.setText("${month + 1}/$day/$year")
 
         imeinum = intent.getStringExtra("imeinumber").toString()
+        casing = intent.getStringExtra("casing").toString()
+        model_number = intent.getStringExtra("model_number").toString()
+        height = intent.getStringExtra("height").toString()
+        wattage = intent.getStringExtra("wattage").toString()
+        leds = intent.getStringExtra("leds").toString()
+
+        binding.casingLuminaire.setText(casing)
+        binding.modelNumberLuminaire.setText(model_number)
+        binding.heightLuminaire.setText(height)
+        binding.wattageLuminaire.setText(wattage)
+        binding.numberOfLeds.setText(leds)
         binding.imeinumber.setText(imeinum)
         binding.imeinumber.isEnabled = false
         binding.retake.setOnClickListener {
@@ -535,7 +559,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
     private fun init() {
         val ib = DistrictDataModel.Data.District(
             id = "0",
-            name = "Name Of District"
+            name = "Name Of District(ज़िला)"
         )
         districtViewModel.getDistrict(Constants.STATE_ID).observe(this) {
             if (it != null && it.statusCode == 200) {
@@ -584,7 +608,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
             mutableList.add(0, ss + wardIds.minus(listOfVehicleNames)[i])
         }
         mutableList.sort()
-        mutableList.add(0, "Select")
+        mutableList.add(0, "Select Pole ID(खंभा संख्या)")
         //mutableList.reverse()
         poleIdsAdapter = ArrayAdapter<String>(
             this,
@@ -700,7 +724,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
             Glide
                 .with(ctx)
                 .load(vendorLogo)
-                .centerCrop()
+                .fitCenter()
                 .placeholder(R.drawable.logo)
                 .into(binding.logo)
             showImage(captureImage)
@@ -873,7 +897,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
             if (it != null) {
 
                 if (srLuminaryId.length < 1 && it!!.data!!.size > 1) {
-                    listOfSerialNumberLuminary.add(0, "Luminary Serial Number")
+                    listOfSerialNumberLuminary.add(0, "Luminary Serial Number(ल्यूमिनेरी क्रमिक संख्या)")
                     for (i in 0 until it!!.data!!.size) {
 
                         it!!.data!![i]?.serial_number?.let { it1 ->
@@ -887,7 +911,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                 }
 
 
-                if (srLuminaryId.length > 4 && !srLuminaryId.equals("Luminary Serial Number")) {
+                if (srLuminaryId.length > 4 && !srLuminaryId.equals("Luminary Serial Number(ल्यूमिनेरी क्रमिक संख्या)")) {
                     binding.apply {
                         modelNumberLuminaire.setText(it.data!![0]!!.model_number)
                         heightLuminaire.setText(it.data!![0]!!.height)
@@ -949,9 +973,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                     binding.cellVoltageBattery.setText(it!!.data!![0]!!.solarcell)
                     binding.solarCell.setText(it.data!![0]!!.solarcell)
                     if (it.data[0]!!.sPVType.equals("Mono")) {
-                        binding.spvType.setSelection(1)
+                        binding.spvType.setSelection(0)
                     } else {
-                        binding.spvType.setSelection(2)
+                        binding.spvType.setSelection(1)
                     }
                 }
 
@@ -980,7 +1004,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                 if (it != null) {
 
                     if (srBattryiD.length < 2 && it!!.data!!.size > 1) {
-                        listOfSerialNumberBattry.add(0, "Battery Serial Number")
+                        listOfSerialNumberBattry.add(0, "Battery Serial Number(क्रमिक संख्या)")
                         for (i in 0 until it!!.data!!.size) {
                             it!!.data!![i]?.serial_number?.let { it1 ->
                                 listOfSerialNumberBattry.add(
@@ -993,7 +1017,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                     }
 
 
-                    if (srBattryiD.length > 4 && !srBattryiD.equals("Battery Serial Number")) {
+                    if (srBattryiD.length > 4 && !srBattryiD.equals("Battery Serial Number(क्रमिक संख्या)")) {
                         binding.modelNumberBattery.setText(it.data!![0]!!.model_number)
                         var datt = it.data!![0]!!.manufacturingYear?.split("T")?.toTypedArray()
                         binding.manufacturingDateBattery.setText(datt?.get(0))
@@ -1318,7 +1342,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                     blocklist.clear()
                 }
                 binding.spin1.visibility = View.VISIBLE
-                val idb = BlockDataModel.Data.Blocks(id = "0", "Name of Block")
+                val idb = BlockDataModel.Data.Blocks(id = "0", "Name of Block(ब्लाक)")
                 if (it.data!!.size > 1) {
                     for (i in it.data!!) {
                         blocklist.add(i!!.blocks!!)
@@ -1351,7 +1375,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                     panchayatlist.clear()
                 }
                 binding.spin2.visibility = View.VISIBLE
-                val ibb = PanchayatDataModel.Data.Panchayats(id = "0", name = "Name of Panchayat")
+                val ibb = PanchayatDataModel.Data.Panchayats(id = "0", name = "Name of Panchayat(पंचायत)")
 
                 for (i in it.data!!) {
                     panchayatlist.add(i!!.panchayats!!)
@@ -1377,14 +1401,14 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
     private fun getWards(id: String) {
         wardViewModel.getWards(id).observe(this) {
             if (it != null && it.statusCode == 200) {
-                if (wardlist.size !== 0) {
+                if (wardlist.size != 0) {
                     wardlist.clear()
                 }
                 binding.spin3.visibility = View.VISIBLE
                 try {
                     val ib2 = WardModel.Data.Wards(
                         id = "0",
-                        name = Integer.parseInt("Name Of Ward Number")
+                        name = Integer.parseInt("Name Of Ward Number(वार्ड नं)")
                     )
                     // wardlist.add(ib2)
                 } catch (n: NumberFormatException) {
