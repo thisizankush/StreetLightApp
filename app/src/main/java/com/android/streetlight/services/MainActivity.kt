@@ -241,6 +241,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
         actionBar!!.customView = actionBarLayout
         actionBar!!.setBackgroundDrawable(ColorDrawable(Color.WHITE))
         binding.apply {
+            spvTypeLayout.isEnabled = false
             spvType.isEnabled = false
         }
         dataLock = binding.switchUi.isChecked
@@ -523,7 +524,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
             email = null,
             id = "0",
             mobileNumber = null,
-            name = "Select",
+            name = "Select(कंपनी)",
             updatedAt = null,
             v = null,
             logo = "",
