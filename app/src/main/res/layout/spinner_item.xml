@@ -12,18 +12,20 @@
         android:id="@+id/dist"
         android:layout_width="match_parent"
         android:layout_marginEnd="50dp"
-        android:textColor="@color/black"
+        android:textColor="#121212"
+        android:textFontWeight="100"
         android:background="@null"
         android:layout_height="wrap_content" />
+
     <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
         android:layout_alignParentEnd="true"
-       android:layout_marginRight="10dp"
+        android:layout_marginRight="10dp"
         android:src="@drawable/ic_baseline_arrow_drop_down_24"
-        />
+        android:visibility="invisible"
+         />
 </RelativeLayout>
 
 

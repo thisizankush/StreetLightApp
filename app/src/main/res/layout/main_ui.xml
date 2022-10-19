@@ -82,18 +82,18 @@
                         android:prompt="@string/dis"
                         android:spinnerMode="dialog"
                         tools:ignore="HardcodedText" />
-                   <!-- <com.google.android.material.textfield.TextInputLayout
-                        style="@style/CustomDropDownTilStyle"
-                        android:layout_margin="8dp"
-                        android:hint="@string/dis">
+                    <!-- <com.google.android.material.textfield.TextInputLayout
+                         style="@style/CustomDropDownTilStyle"
+                         android:layout_margin="8dp"
+                         android:hint="@string/dis">
 
-                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-                            android:id="@+id/spin"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:focusable="false"
-                            android:inputType="none" />
-                    </com.google.android.material.textfield.TextInputLayout>-->
+                         <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                             android:id="@+id/spin"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:focusable="false"
+                             android:inputType="none" />
+                     </com.google.android.material.textfield.TextInputLayout>-->
 
                 </LinearLayout>
 
@@ -1444,37 +1444,37 @@
 
                     </LinearLayout>
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            style="@style/LoginTextInputLayoutStyle"
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColorHint="#121212"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="14dp"
+                        android:alpha="0.7"
+                        android:digits="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:hint="Model Number"
+                            android:id="@+id/modelNumber"
                             android:fontFamily="sans-serif-light"
-                            android:textColorHint="#121212"
-                            android:layout_marginStart="14dp"
-                            android:layout_marginEnd="14dp"
-                            android:alpha="0.7"
-                            android:digits="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            app:boxCornerRadiusBottomEnd="16dp"
-                            app:boxCornerRadiusBottomStart="16dp"
-                            app:boxCornerRadiusTopEnd="16dp"
-                            app:boxCornerRadiusTopStart="16dp">
+                            android:enabled="false"
+                            android:singleLine="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
+                            android:background="@drawable/grey_outline"
+                            android:textFontWeight="100"
+                            android:textColor="#121212"
+                            android:textSize="14sp" />
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Model Number"
-                                android:id="@+id/modelNumber"
-                                android:fontFamily="sans-serif-light"
-                                android:enabled="false"
-                                android:singleLine="true"
-                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
-                                android:background="@drawable/grey_outline"
-                                android:textFontWeight="100"
-                                android:textColor="#121212"
-                                android:textSize="14sp" />
-
-                        </com.google.android.material.textfield.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -2380,15 +2380,15 @@
 
                     </RelativeLayout>
 
-                   <ImageView
-                       android:layout_width="wrap_content"
-                       android:layout_height="300dp"
-                       android:id="@+id/uploadImage"
-                       android:clickable="true"
-                       android:visibility="gone"
-                       android:layout_marginTop="10dp"
-                       android:src="@drawable/img"
-                       android:focusable="true" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:id="@+id/uploadImage"
+                        android:clickable="true"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/img"
+                        android:focusable="true" />
 
 
                     <LinearLayout

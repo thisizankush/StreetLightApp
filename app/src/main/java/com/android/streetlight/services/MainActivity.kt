@@ -67,14 +67,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.TransformationUtils.rotateImage
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import kotlinx.android.synthetic.main.activity_main.beneficiaryAddress
-import kotlinx.android.synthetic.main.activity_main.beneficiaryname
-import kotlinx.android.synthetic.main.activity_main.poleId
-import kotlinx.android.synthetic.main.activity_main.spin
-import kotlinx.android.synthetic.main.activity_main.spin1
-import kotlinx.android.synthetic.main.activity_main.spin2
-import kotlinx.android.synthetic.main.activity_main.spin3
-import kotlinx.android.synthetic.main.activity_main.vendor
 import kotlinx.android.synthetic.main.single_main_ui.*
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -247,23 +239,147 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
         dataLock = binding.switchUi.isChecked
         binding.switchUi.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
-                // The toggle is enabled
-                binding.apply {
-                    uploadImage.visibility = View.VISIBLE
-                    spin.isEnabled = false
-                    spin1.isEnabled = false
-                    spin2.isEnabled = false
-                    spin3.isEnabled = false
-                    poleId.isEnabled = false
-                    vendor.isClickable = false
-                    beneficiaryAddress.isEnabled = false
-                    beneficiaryname.isEnabled = false
-                    installperson.isEnabled = false
-                    vendor.isEnabled = false
 
+                if (binding.imeinumber.text.toString().isBlank()) {
+                    binding.imeinumber.error = "Required"
+                    binding.imeinumber.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+
+                } else if (dist.startsWith("Y")) {
+                    Toast.makeText(ctx, "first select District", Toast.LENGTH_SHORT).show()
+                    binding.spin.requestFocus()
+                    binding.switchUi.isChecked = false
+                } else if (block.startsWith("Name")) {
+                    Toast.makeText(ctx, "first select Block", Toast.LENGTH_SHORT).show()
+                    binding.spin1.requestFocus()
+                    binding.switchUi.isChecked = false
+                } else if (panch.startsWith("Name")) {
+                    Toast.makeText(ctx, "first select Panchayat", Toast.LENGTH_SHORT).show()
+                    binding.poleNumberSpinner.requestFocus()
+                    binding.switchUi.isChecked = false
+                } else if (wardPole.equals("Select")) {
+                    Toast.makeText(ctx, "first select pole id", Toast.LENGTH_SHORT).show()
+                    binding.poleNumberSpinner.requestFocus()
+                    binding.switchUi.isChecked = false
+                } else if (binding.beneficiaryname.text.toString().isBlank()) {
+                    binding.beneficiaryname.error = "Required"
+                    binding.beneficiaryname.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+//
+                } else if (binding.beneficiaryAddress.text.toString().isBlank()) {
+                    binding.beneficiaryAddress.error = "Required"
+                    binding.beneficiaryAddress.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+//
+                } else if (binding.installationdate.text.toString().isBlank()) {
+                    binding.installationdate.error = "Required"
+                    binding.installationdate.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.installperson.text.toString().isBlank()) {
+                    binding.installperson.error = "Required"
+                    binding.installperson.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.installationdateAsset.text.toString().isBlank()) {
+                    binding.installationdate.error = "Required"
+                    binding.installationdateAsset.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.modelNumberLuminaire.text.toString().isBlank()) {
+                    binding.modelNumberLuminaire.error = "Required"
+                    binding.modelNumberLuminaire.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.manufacturingdatePvModules.text.toString().isBlank()) {
+                    binding.manufacturingdatePvModules.error = "Required"
+                    binding.manufacturingdatePvModules.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.wattage.text.toString().isBlank()) {
+                    binding.wattage.error = "Required"
+                    binding.wattage.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.solarCell.text.toString().isBlank()) {
+                    binding.solarCell.error = "Required"
+                    binding.solarCell.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.casingLuminaire.text.toString().isBlank()) {
+                    binding.casingLuminaire.error = "Required"
+                    binding.casingLuminaire.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.modelNumberLuminaire.text.toString().isBlank()) {
+                    binding.modelNumberLuminaire.error = "Required"
+                    binding.modelNumberLuminaire.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.heightLuminaire.text.toString().isBlank()) {
+                    binding.heightLuminaire.error = "Required"
+                    binding.heightLuminaire.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.wattageLuminaire.text.toString().isBlank()) {
+                    binding.wattageLuminaire.error = "Required"
+                    binding.wattageLuminaire.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.modelNumberBattery.text.toString().isBlank()) {
+                    binding.modelNumberBattery.error = "Required"
+                    binding.modelNumberBattery.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+                    binding.switchUi.isChecked = false
+
+                } else if (binding.manufacturingDateBattery.text.toString().isBlank()) {
+                    binding.manufacturingDateBattery.error = "Required"
+                    binding.manufacturingDateBattery.requestFocus()
+                    Toast.makeText(ctx, "Fill all required details", Toast.LENGTH_SHORT).show()
+
+                    binding.switchUi.isChecked = false
+
+                } else if (wardPole.equals("Select")) {
+                    Toast.makeText(ctx, "first select pole id", Toast.LENGTH_SHORT).show()
+                    binding.poleNumberSpinner.requestFocus()
+                    binding.switchUi.isChecked = false
+                } else {
+                    // The toggle is enabled
+                    binding.apply {
+                        uploadImage.visibility = View.VISIBLE
+                        spin.isEnabled = false
+                        spin1.isEnabled = false
+                        spin2.isEnabled = false
+                        spin3.isEnabled = false
+                        poleId.isEnabled = false
+                        vendor.isClickable = false
+                        beneficiaryAddress.isEnabled = false
+                        beneficiaryname.isEnabled = false
+                        installperson.isEnabled = false
+                        vendor.isEnabled = false
+
+                    }
 
                 }
-
 
             } else {
                 // The toggle is disabled
@@ -898,7 +1014,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
             if (it != null) {
 
                 if (srLuminaryId.length < 1 && it!!.data!!.size > 1) {
-                    listOfSerialNumberLuminary.add(0, "Luminary Serial Number(ल्यूमिनेरी क्रमिक संख्या)")
+                    listOfSerialNumberLuminary.add(
+                        0,
+                        "Luminary Serial Number(ल्यूमिनेरी क्रमिक संख्या)"
+                    )
                     for (i in 0 until it!!.data!!.size) {
 
                         it!!.data!![i]?.serial_number?.let { it1 ->
@@ -1376,7 +1495,8 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                     panchayatlist.clear()
                 }
                 binding.spin2.visibility = View.VISIBLE
-                val ibb = PanchayatDataModel.Data.Panchayats(id = "0", name = "Name of Panchayat(पंचायत)")
+                val ibb =
+                    PanchayatDataModel.Data.Panchayats(id = "0", name = "Name of Panchayat(पंचायत)")
 
                 for (i in it.data!!) {
                     panchayatlist.add(i!!.panchayats!!)
@@ -1409,9 +1529,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                 try {
                     val ib2 = WardModel.Data.Wards(
                         id = "0",
-                        name = Integer.parseInt("Name Of Ward Number(वार्ड नं)")
+                        name = "Name Of Ward Number(वार्ड नं)"
                     )
-                    // wardlist.add(ib2)
+                    wardlist.add(0,ib2)
                 } catch (n: NumberFormatException) {
                     n.printStackTrace()
                 }
@@ -1424,7 +1544,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                     this,
                     R.layout.spinner_item,
                     R.id.dist,
-                    sortedList
+                    wardlist
                 )
                 binding.spin3.adapter = wardAdapter
                 binding.spin3.onItemSelectedListener = this

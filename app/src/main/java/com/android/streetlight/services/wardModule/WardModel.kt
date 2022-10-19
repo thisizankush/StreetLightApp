@@ -26,7 +26,7 @@ data class WardModel(
             @Json(name = "_id")
             val id: String?,
             @Json(name = "name")
-            val name: Int?
+            val name: String?
         ){
             override fun toString(): String {
                 return name.toString()
