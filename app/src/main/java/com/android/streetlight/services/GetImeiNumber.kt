@@ -110,12 +110,8 @@ class GetImeiNumber : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         serialListViewModel.getSerialList().observe(this) {
             if (it != null) {
 
-//                for (i in 0 until it.data.size) {
-//                    Toast.makeText(this, it.data[i].serial_number.toString(), Toast.LENGTH_SHORT).show()
-//                }
                 if (it.data.size > 1) {
                     listOfSerialNumber.add(0, "Serial Number(क्रमिक संख्या)")
-                    //Log.e("HEY", it.data.size.toString())
                     for (i in 0 until it.data.size) {
 
 
@@ -124,9 +120,6 @@ class GetImeiNumber : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                                  i + 1,
                                 it1
                             )
-                            //Log.e("HEY", it1 )
-                            //Log.e("HEY", i.toString() )
-
 
                         }
                     }

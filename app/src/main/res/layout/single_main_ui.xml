@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="16dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -43,20 +43,23 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:text="System Details"
-                    android:textColor="#4CA85E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:textFontWeight="700"
+                    />
 
 
                 <LinearLayout
                     android:id="@+id/district_spinner"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
                     android:layout_weight="2"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:visibility="visible"
                     android:orientation="horizontal">
 
@@ -102,11 +105,11 @@
                     android:id="@+id/block_spinner"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
                     android:layout_weight="2"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:orientation="horizontal"
                     android:visibility="gone">
 
@@ -139,11 +142,11 @@
                     android:id="@+id/panchayat_spinner"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
                     android:layout_weight="2"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:orientation="horizontal"
                     android:visibility="gone">
 
@@ -176,11 +179,11 @@
                     android:id="@+id/ward_spinner"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
                     android:layout_weight="2"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:orientation="horizontal"
                     android:visibility="gone">
 
@@ -212,11 +215,11 @@
                     android:id="@+id/pole_number_spinner"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
                     android:layout_weight="2"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:orientation="horizontal"
                     android:visibility="gone">
 
@@ -250,12 +253,12 @@
                     style="@style/LoginTextInputLayoutStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
                     app:boxCornerRadiusTopEnd="16dp"
@@ -283,10 +286,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
-                    android:textColorHint="#121212"
+                    android:alpha="1"
+                    android:textColorHint="#C0C0C0"
                     android:visibility="gone"
                     android:fontFamily="sans-serif-light"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -315,9 +318,9 @@
                 <!--                    android:layout_width="match_parent"-->
                 <!--                    android:layout_height="wrap_content"-->
                 <!--                    android:layout_marginStart="14sp"-->
-                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#121212"-->
+                <!--                    android:textColorHint="#C0C0C0"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -340,9 +343,9 @@
                 <!--                    android:layout_width="match_parent"-->
                 <!--                    android:layout_height="wrap_content"-->
                 <!--                    android:layout_marginStart="14sp"-->
-                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#121212"-->
+                <!--                    android:textColorHint="#C0C0C0"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -366,9 +369,9 @@
                 <!--                    android:layout_width="match_parent"-->
                 <!--                    android:layout_height="wrap_content"-->
                 <!--                    android:layout_marginStart="14sp"-->
-                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#121212"-->
+                <!--                    android:textColorHint="#C0C0C0"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -392,9 +395,9 @@
                 <!--                    android:layout_width="match_parent"-->
                 <!--                    android:layout_height="wrap_content"-->
                 <!--                    android:layout_marginStart="14sp"-->
-                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#121212"-->
+                <!--                    android:textColorHint="#C0C0C0"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -417,9 +420,9 @@
                 <!--                    android:layout_width="match_parent"-->
                 <!--                    android:layout_height="wrap_content"-->
                 <!--                    android:layout_marginStart="14sp"-->
-                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#121212"-->
+                <!--                    android:textColorHint="#C0C0C0"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -444,8 +447,8 @@
                 <!--                    android:layout_height="wrap_content"-->
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:layout_marginTop="10dp"-->
-                <!--                    android:textColorHint="#121212"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:textColorHint="#C0C0C0"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -465,8 +468,8 @@
                 <!--                        style="@style/LoginTextInputLayoutStyle"-->
                 <!--                        android:layout_width="match_parent"-->
                 <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_marginTop="10dp"-->
-                <!--                        android:textColorHint="#121212"-->
+                <!--                        android:layout_marginTop="16dp"-->
+                <!--                        android:textColorHint="#C0C0C0"-->
                 <!--                        app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                        app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                        app:boxCornerRadiusTopEnd="16dp"-->
@@ -491,12 +494,12 @@
                     style="@style/LoginTextInputLayoutStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
                     app:boxCornerRadiusTopEnd="16dp"
@@ -510,6 +513,7 @@
                         android:fontFamily="sans-serif-light"
                         android:hint="Beneficiary Name(लाभुक का नाम)"
                         android:singleLine="true"
+                        android:textStyle="bold"
                         android:textColor="@color/black"
                         android:textFontWeight="100"
                         android:textSize="14sp" />
@@ -520,12 +524,12 @@
                     style="@style/LoginTextInputLayoutStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
                     app:boxCornerRadiusTopEnd="16dp"
@@ -551,11 +555,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="sans-serif-light"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
-                    android:textColorHint="#121212"
+                    android:alpha="1"
+                    android:textColorHint="#C0C0C0"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -580,12 +584,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:visibility="gone"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
                     app:boxCornerRadiusTopEnd="16dp"
@@ -609,10 +613,10 @@
                 <!--                    style="@style/LoginTextInputLayoutStyle"-->
                 <!--                    android:layout_width="match_parent"-->
                 <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#121212"-->
+                <!--                    android:textColorHint="#C0C0C0"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -635,11 +639,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -664,11 +668,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="sans-serif-light"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
-                    android:textColorHint="#121212"
+                    android:alpha="1"
+                    android:textColorHint="#C0C0C0"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -693,12 +697,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:fontFamily="sans-serif-light"
                     android:singleLine="true"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -723,11 +727,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
-                    android:alpha="0.7"
+                    android:layout_marginTop="16dp"
+                    android:alpha="1"
                     android:fontFamily="sans-serif-light"
                     android:layout_marginEnd="14sp"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -753,10 +757,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
-                    android:textColorHint="#121212"
+                    android:alpha="1"
+                    android:textColorHint="#C0C0C0"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -782,11 +786,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
-                    android:alpha="0.7"
+                    android:layout_marginTop="16dp"
+                    android:alpha="1"
                     android:layout_marginEnd="14sp"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -811,10 +815,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
-                    android:textColorHint="#121212"
+                    android:alpha="1"
+                    android:textColorHint="#C0C0C0"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -841,10 +845,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
-                    android:textColorHint="#121212"
+                    android:alpha="1"
+                    android:textColorHint="#C0C0C0"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -870,10 +874,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
-                    android:textColorHint="#121212"
+                    android:alpha="1"
+                    android:textColorHint="#C0C0C0"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -900,10 +904,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:alpha="0.7"
-                    android:textColorHint="#121212"
+                    android:alpha="1"
+                    android:textColorHint="#C0C0C0"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -930,11 +934,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14sp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:textColorHint="#121212"
+                    android:textColorHint="#C0C0C0"
                     android:fontFamily="sans-serif-light"
-                    android:alpha="0.7"
+                    android:alpha="1"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -1057,8 +1061,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:orientation="vertical">
 
@@ -1067,12 +1069,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="14sp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:visibility="gone"
                         android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
+                        android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#121212"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1098,11 +1100,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="14sp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="14sp"
                         android:visibility="gone"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1127,12 +1129,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="14sp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="14sp"
-                        android:textColorHint="#121212"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:visibility="gone"
-                        android:alpha="0.7"
+                        android:alpha="1"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
                         app:boxCornerRadiusTopStart="16dp">
@@ -1173,7 +1175,7 @@
                         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                             android:layout_weight="1.25"
                             android:layout_width="55dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="16dp"
                             android:visibility="visible"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -1186,41 +1188,46 @@
 
 
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:text="Installer Company"
+                        android:layout_marginStart="26dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textFontWeight="700"
+                        android:layout_height="wrap_content"/>
+
                     <LinearLayout
                         android:id="@+id/serialNumber_layoutl"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="26dp"
                         android:visibility="visible"
                         android:orientation="vertical"
                         android:weightSum="2">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_weight="0.75"
-                            android:visibility="visible"
-                            android:textStyle="bold"
-                            android:text="Installer Company"
-                            android:fontFamily="sans-serif-light"
-                            android:textSize="20sp"
-                            android:textColor="#4CA85E"
-                            android:layout_height="wrap_content"/>
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:orientation="vertical"
-                            android:alpha="0.7"
+                            android:alpha="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginStart="2dp"
                             android:layout_height="wrap_content">
 
                             <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                                 android:layout_width="match_parent"
                                 android:layout_height="55dp"
                                 android:fontFamily="sans-serif-light"
-                                android:layout_marginTop="10dp"
                                 android:layout_gravity="center_vertical"
-                                android:layout_weight="1.25"
                                 android:id="@+id/vendor"
                                 android:background="@drawable/grey_outline"
                                 android:textFontWeight="100"
@@ -1236,12 +1243,12 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#121212"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1265,11 +1272,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1297,10 +1304,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="14sp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1330,11 +1337,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="14sp"
                         android:visibility="gone"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
+                        android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#121212"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1354,11 +1361,20 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <View
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="#F1F1F1"/>
+
                     <TextView
-                        android:layout_marginTop="10dp"
-                        android:textSize="20sp"
-                        android:layout_marginStart="5dp"
-                        android:textColor="#4CA85E"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textFontWeight="700"
                         android:fontFamily="sans-serif-light"
                         android:textStyle="bold"
                         android:layout_width="match_parent"
@@ -1367,38 +1383,39 @@
 
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:weightSum="2">
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:visibility="visible"
+                        android:orientation="horizontal">
 
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_weight="0.75"
-                            android:text="Manufacturer (उत्पादक)"
-                            android:textStyle="normal"
-                            android:fontFamily="sans-serif-light"
-                            android:textColor="#121212"
-                            android:textSize="20sp"
-                            android:layout_height="wrap_content"/>
                         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/manufacturingName"
+                            style="@style/AppSpinner"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="55dp"
                             android:layout_weight="1.25"
                             android:fontFamily="sans-serif-light"
-                            android:layout_gravity="center_vertical"
-                            android:hint="Manufacturing Name"
-                            android:id="@+id/manufacturingName"
-                            android:singleLine="true"
-                            android:alpha="0.7"
-                            android:background="@drawable/grey_outline"
-                            android:textFontWeight="100"
-                            android:textColor="#121212"
-                            android:textSize="14sp"/>
+                            android:visibility="visible"
+                            android:prompt="@string/dis"
+                            android:spinnerMode="dialog"
+                            tools:ignore="HardcodedText" />
+                        <!-- <com.google.android.material.textfield.TextInputLayout
+                             style="@style/CustomDropDownTilStyle"
+                             android:layout_margin="8dp"
+                             android:hint="@string/dis">
 
+                             <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                 android:id="@+id/spin"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:focusable="false"
+                                 android:inputType="none" />
+                         </com.google.android.material.textfield.TextInputLayout>-->
 
                     </LinearLayout>
 
@@ -1409,10 +1426,10 @@
                         android:id="@+id/serialNumber_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginStart="15dp"
-                        android:alpha="0.7"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:layout_marginTop="16dp"
                         android:visibility="gone"
                         android:orientation="vertical"
                         android:weightSum="2">
@@ -1421,18 +1438,19 @@
                             android:layout_width="wrap_content"
                             android:layout_weight="0.75"
                             android:visibility="visible"
-                            android:textStyle="normal"
-                            android:text="Serial Number(क्रमिक संख्या)"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textFontWeight="500"
                             android:fontFamily="sans-serif-light"
-                            android:textSize="18sp"
-                            android:textColor="#121212"
+                            android:textStyle="bold"
+                            android:text="Serial Number(क्रमिक संख्या)"
                             android:layout_height="wrap_content"/>
 
                         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                             android:layout_width="match_parent"
                             android:layout_height="55dp"
                             android:fontFamily="sans-serif-light"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="16dp"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1.25"
                             android:id="@+id/serialNumber"
@@ -1448,12 +1466,12 @@
                             style="@style/LoginTextInputLayoutStyle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="16dp"
                             android:fontFamily="sans-serif-light"
-                            android:textColorHint="#121212"
-                            android:layout_marginStart="14dp"
-                            android:layout_marginEnd="14dp"
-                            android:alpha="0.7"
+                            android:textColorHint="#C0C0C0"
+                            android:layout_marginStart="26dp"
+                            android:layout_marginEnd="26dp"
+                            android:alpha="1"
                             android:digits="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             app:boxCornerRadiusBottomEnd="16dp"
                             app:boxCornerRadiusBottomStart="16dp"
@@ -1481,12 +1499,12 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
                         android:fontFamily="sans-serif-light"
-                        android:layout_marginTop="10dp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1513,12 +1531,12 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:layout_marginTop="10dp"
-                        android:alpha="0.7"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:layout_marginTop="16dp"
+                        android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#121212"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1543,11 +1561,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1570,39 +1588,41 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="SPV Type"
+                        android:textStyle="normal"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginTop="15dp"
+                        android:alpha="1"
+                        android:textFontWeight="700"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="16sp"
+                        android:textColor="#121212"
+                        android:layout_height="wrap_content"/>
                     <LinearLayout
                         android:id="@+id/spvTypeLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
                         android:orientation="vertical"
                         android:weightSum="2">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_weight="0.75"
-                            android:text="SPV Type"
-                            android:textStyle="normal"
-                            android:fontFamily="sans-serif-light"
-                            android:textSize="20sp"
-                            android:textColor="#121212"
-                            android:layout_height="wrap_content"/>
+
 
                         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                             android:layout_width="match_parent"
                             android:layout_height="55dp"
                             android:hint="SPV Type"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="16dp"
                             android:fontFamily="sans-serif-light"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1.25"
                             tools:listitem="@layout/spinner_item"
                             android:singleLine="true"
                             android:id="@+id/spvType"
-                            android:alpha="0.7"
+                            android:alpha="1"
                             style="@style/AppSpinner"
                             android:entries="@array/svp"
                             android:background="@drawable/grey_outline"
@@ -1620,11 +1640,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginStart="14sp"
                         android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1650,12 +1670,12 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginStart="14sp"
                         android:fontFamily="sans-serif-light"
                         android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:visibility="gone"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1676,12 +1696,21 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <View
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="#F1F1F1"/>
+
                     <TextView
-                        android:textSize="20sp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
                         android:textStyle="bold"
-                        android:textColor="#4CA85E"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textFontWeight="700"
                         android:layout_width="match_parent"
                         android:fontFamily="sans-serif-light"
                         android:layout_height="wrap_content"
@@ -1733,7 +1762,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="15dp"
-                        android:alpha="0.7"
+                        android:alpha="1"
                         android:visibility="gone"
                         android:layout_marginEnd="10dp"
                         android:orientation="vertical"
@@ -1744,16 +1773,17 @@
                             android:layout_weight="0.75"
                             android:visibility="visible"
                             android:text="Serial Number(क्रमिक संख्या)"
-                            android:textStyle="normal"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textFontWeight="500"
                             android:fontFamily="sans-serif-light"
-                            android:textSize="18sp"
-                            android:textColor="#121212"
+                            android:textStyle="bold"
                             android:layout_height="wrap_content"/>
 
                         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                             android:layout_width="match_parent"
                             android:layout_height="55dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="16dp"
                             android:fontFamily="sans-serif-light"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1.25"
@@ -1769,11 +1799,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1801,12 +1831,13 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:fontFamily="sans-serif-light"
-                        android:layout_marginStart="14sp"
-                        android:alpha="0.7"
-                        android:layout_marginEnd="14sp"
-                        android:textColorHint="#121212"
+
+                        android:alpha="1"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1832,11 +1863,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:alpha="0.7"
-                        android:layout_marginEnd="14sp"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:alpha="1"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:textColorHint="#C0C0C0"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1863,12 +1894,12 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
+                        android:layout_marginTop="16dp"
                         android:fontFamily="sans-serif-light"
-                        android:alpha="0.7"
-                        android:layout_marginEnd="14sp"
-                        android:textColorHint="#121212"
+                        android:alpha="1"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1895,11 +1926,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1926,13 +1957,13 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
                         android:visibility="gone"
-                        android:alpha="0.7"
+                        android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#121212"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1952,64 +1983,63 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <View
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="#F1F1F1"/>
 
                     <TextView
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="16dp"
                         android:textStyle="bold"
-                        android:textSize="20sp"
-                        android:layout_marginStart="5dp"
-                        android:textColor="#4CA85E"
+                        android:layout_marginStart="26dp"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textFontWeight="700"
                         android:fontFamily="sans-serif-light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Battery Details(बैटरी विवरण)"/>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:weightSum="2">
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:visibility="visible"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_weight="0.75"
-                            android:text="Manufacturer  (उत्पादक)"
-                            android:fontFamily="sans-serif-light"
-                            android:textStyle="normal"
-                            android:textSize="18sp"
-                            android:textColor="#121212"
-                            android:layout_height="wrap_content"/>
                         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/manufacturingNameBattery"
+                            style="@style/AppSpinner"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="55dp"
                             android:layout_weight="1.25"
                             android:fontFamily="sans-serif-light"
-                            android:hint="Manufacturing Name"
-                            android:singleLine="true"
-                            android:alpha="0.7"
-                            android.popupBackground="@null"
-                            android:layout_gravity="center_vertical"
-                            android:id="@+id/manufacturingNameBattery"
-                            android:background="@drawable/grey_outline"
-                            android:textFontWeight="100"
-                            android:textColor="#121212"
-                            android:textSize="14sp"/>
-
+                            android:visibility="visible"
+                            android:prompt="@string/dis"
+                            android:spinnerMode="dialog"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
+
+
+
+
 
 
                     <LinearLayout
                         android:id="@+id/serialNumberBattery_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:layout_marginTop="16dp"
                         android:visibility="gone"
-                        android:alpha="0.7"
-                        android:layout_marginEnd="10dp"
+                        android:alpha="1"
                         android:orientation="vertical"
                         android:weightSum="2">
 
@@ -2017,17 +2047,18 @@
                             android:layout_width="wrap_content"
                             android:layout_weight="0.75"
                             android:visibility="visible"
-                            android:textStyle="normal"
                             android:text="Serial Number(क्रमिक संख्या)"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textFontWeight="500"
                             android:fontFamily="sans-serif-light"
-                            android:textSize="20sp"
-                            android:textColor="#121212"
+                            android:textStyle="bold"
                             android:layout_height="wrap_content"/>
 
                         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                             android:layout_width="match_parent"
                             android:layout_height="55dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="16dp"
                             android:fontFamily="sans-serif-light"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1.25"
@@ -2046,11 +2077,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -2082,12 +2113,13 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:alpha="0.7"
+                        android:layout_marginTop="16dp"
+
+                        android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:layout_marginEnd="14sp"
-                        android:textColorHint="#121212"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -2113,12 +2145,12 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#121212"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -2144,12 +2176,12 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
+                        android:layout_marginTop="16dp"
                         android:fontFamily="sans-serif-light"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -2175,11 +2207,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -2206,11 +2238,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -2236,12 +2268,12 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#121212"
+                        android:textColorHint="#C0C0C0"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:visibility="gone"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -2266,11 +2298,11 @@
                         style="@style/LoginTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="14sp"
-                        android:layout_marginEnd="14sp"
-                        android:alpha="0.7"
-                        android:textColorHint="#121212"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:alpha="1"
+                        android:textColorHint="#C0C0C0"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:visibility="visible"
@@ -2296,29 +2328,32 @@
                     <LinearLayout
                         android:id="@+id/data_lock"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="15dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
                         android:layout_marginBottom="12dp"
                         android:layout_weight="2"
                         android:orientation="horizontal"
                         android:visibility="visible">
 
                         <TextView
-
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight=".75"
-                            android:paddingStart="20dp"
+                            android:layout_gravity="center_vertical"
                             android:fontFamily="sans-serif-light"
-                            android:text="Data Lock    (डेटा लॉक)"
-                            android:textColor="#4CA85E"
-                            android:textSize="20sp" />
+                            android:text="Data Lock          (डेटा लॉक)"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textFontWeight="500"
+                            />
 
                         <Switch
                             android:id="@+id/switch_ui"
                             android:layout_width="0dp"
-                            android:layout_height="40dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
                             android:layout_weight="1.25"
                             android:visibility="visible"
                             tools:ignore="HardcodedText" />
@@ -2386,7 +2421,7 @@
                        android:id="@+id/uploadImage"
                        android:clickable="true"
                        android:visibility="gone"
-                       android:layout_marginTop="10dp"
+                       android:layout_marginTop="16dp"
                        android:src="@drawable/img"
                        android:focusable="true" />
 
@@ -2398,22 +2433,40 @@
                         android:visibility="gone"></LinearLayout>
 
                 </LinearLayout>
-                <Button
-
+                <LinearLayout
+                    android:id="@+id/retake"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="10dp"
-                    android:text="Retake"
-                    android:id="@+id/retake"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="26dp"
                     android:visibility="gone"
-                    android:background="@drawable/round_corner"
-                    android:backgroundTint="#4CA85E"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/new_bg"
                     android:orientation="horizontal"
-                    android:weightSum="1"/>
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:visibility="gone" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:text="Retake"
+                        android:textColor="#4CA85E"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/submitButtonAsset"
                     android:layout_width="match_parent"
@@ -2421,9 +2474,9 @@
                     android:visibility="visible"
                     android:layout_below="@+id/container_edt_text"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="26dp"
                     android:layout_marginTop="12dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="26dp"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/round_corner"
                     android:backgroundTint="#4CA85E"
@@ -2448,7 +2501,6 @@
                         android:gravity="end"
                         android:text="Submit"
                         android:fontFamily="sans-serif-light"
-                        android:textAllCaps="true"
                         android:textColor="@color/white"
                         android:textFontWeight="700"
                         android:textSize="16sp"

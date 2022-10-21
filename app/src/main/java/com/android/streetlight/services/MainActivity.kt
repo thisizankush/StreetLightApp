@@ -910,6 +910,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                 panchayatid = selectedObject.id.toString()
                 getWards(selectedObject.id.toString())
                 panch = selectedObject.name.toString()
+                Toast.makeText(this, "" + selectedObject.id.toString(), Toast.LENGTH_SHORT).show()
             }
             R.id.spin3 -> {
                 val selectedObject = spin3.selectedItem as WardModel.Data.Wards
@@ -1200,7 +1201,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
 
     private fun getModulesLuminary() {
         val ib = ModuleDataModule.Data(
-            createdAt = null, id = "0", name = "Select", type = null, updatedAt = null, v = null
+            createdAt = null, id = "0", name = "Select(Manufacturer)", type = null, updatedAt = null, v = null
 
 
         )
@@ -1231,7 +1232,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
 
     private fun getModulesSolar() {
         val ib = ModuleDataModule.Data(
-            createdAt = null, id = "0", name = "Select", type = null, updatedAt = null, v = null
+            createdAt = null, id = "0", name = "Select(Manufacturer)", type = null, updatedAt = null, v = null
         )
         moduleViewModel.getModule("batteryModules").observe(this) {
             if (it != null && it.statusCode == 200) {
@@ -1402,7 +1403,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
 
     private fun getModulesPv() {
         val ib = ModuleDataModule.Data(
-            createdAt = null, id = "0", name = "Select", type = null, updatedAt = null, v = null
+            createdAt = null, id = "0", name = "Select(Manufacturer)", type = null, updatedAt = null, v = null
 
 
         )

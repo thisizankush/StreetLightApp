@@ -25,7 +25,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
                 android:background="@drawable/round_corner"
-                android:backgroundTint="#344767"
+                android:backgroundTint="#4CA85E"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -46,9 +46,9 @@
                     android:gravity="end"
                     android:text="New Installation"
                     android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:textFontWeight="700"
-                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:textFontWeight="600"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -82,7 +82,7 @@
                     android:text="Create Asset"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
-                    android:textFontWeight="700"
+                    android:textFontWeight="600"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -93,8 +93,7 @@
                 android:layout_height="55dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/round_corner"
-                android:backgroundTint="#344767"
+                android:background="@drawable/new_bg"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -115,9 +114,9 @@
                     android:gravity="end"
                     android:text="Log Out"
                     android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:textFontWeight="700"
-                    android:textSize="16sp"
+                    android:textColor="#4CA85E"
+                    android:textFontWeight="600"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
