@@ -47,7 +47,7 @@
                     android:textSize="16sp"
                     android:layout_marginStart="16dp"
                     android:textStyle="bold"
-                    android:textFontWeight="700"
+                    android:textFontWeight="500"
                     />
 
 
@@ -72,7 +72,7 @@
                         android:paddingStart="20dp"
                         android:text="District"
                         android:textColor="#121212"
-                        android:textFontWeight="700" />
+                        android:textFontWeight="500" />
 
                     <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                         android:id="@+id/spin"
@@ -122,7 +122,7 @@
                         android:paddingStart="20dp"
                         android:text="Blocks"
                         android:textColor="#121212"
-                        android:textFontWeight="700" />
+                        android:textFontWeight="500" />
 
                     <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                         android:id="@+id/spin1"
@@ -159,7 +159,7 @@
                         android:paddingStart="20dp"
                         android:text="Panchayat"
                         android:textColor="#121212"
-                        android:textFontWeight="700" />
+                        android:textFontWeight="500" />
 
                     <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                         android:id="@+id/spin2"
@@ -196,7 +196,7 @@
                         android:paddingStart="20dp"
                         android:text="Ward"
                         android:textColor="#121212"
-                        android:textFontWeight="700" />
+                        android:textFontWeight="500" />
 
                     <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                         android:id="@+id/spin3"
@@ -233,7 +233,7 @@
                         android:visibility="gone"
                         android:text="Pole Id"
                         android:textColor="#121212"
-                        android:textFontWeight="700" />
+                        android:textFontWeight="500" />
 
                     <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                         android:id="@+id/poleId"
@@ -258,7 +258,7 @@
                     android:layout_marginEnd="16dp"
                     android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
                     app:boxCornerRadiusTopEnd="16dp"
@@ -289,7 +289,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:visibility="gone"
                     android:fontFamily="sans-serif-light"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -320,7 +320,7 @@
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#C0C0C0"-->
+                <!--                    android:textColorHint="#9A9C9E"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -345,7 +345,7 @@
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#C0C0C0"-->
+                <!--                    android:textColorHint="#9A9C9E"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -371,7 +371,7 @@
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#C0C0C0"-->
+                <!--                    android:textColorHint="#9A9C9E"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -397,7 +397,7 @@
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#C0C0C0"-->
+                <!--                    android:textColorHint="#9A9C9E"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -422,7 +422,7 @@
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#C0C0C0"-->
+                <!--                    android:textColorHint="#9A9C9E"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -448,7 +448,7 @@
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
                 <!--                    android:layout_marginTop="16dp"-->
-                <!--                    android:textColorHint="#C0C0C0"-->
+                <!--                    android:textColorHint="#9A9C9E"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -469,7 +469,7 @@
                 <!--                        android:layout_width="match_parent"-->
                 <!--                        android:layout_height="wrap_content"-->
                 <!--                        android:layout_marginTop="16dp"-->
-                <!--                        android:textColorHint="#C0C0C0"-->
+                <!--                        android:textColorHint="#9A9C9E"-->
                 <!--                        app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                        app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                        app:boxCornerRadiusTopEnd="16dp"-->
@@ -499,7 +499,7 @@
                     android:layout_marginStart="16dp"
                     android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
                     app:boxCornerRadiusTopEnd="16dp"
@@ -529,7 +529,7 @@
                     android:layout_marginStart="16dp"
                     android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
                     app:boxCornerRadiusTopEnd="16dp"
@@ -559,7 +559,7 @@
                     android:fontFamily="sans-serif-light"
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -589,7 +589,7 @@
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
                     app:boxCornerRadiusTopEnd="16dp"
@@ -616,7 +616,7 @@
                 <!--                    android:layout_marginTop="16dp"-->
                 <!--                    android:layout_marginStart="14sp"-->
                 <!--                    android:layout_marginEnd="14sp"-->
-                <!--                    android:textColorHint="#C0C0C0"-->
+                <!--                    android:textColorHint="#9A9C9E"-->
                 <!--                    app:boxCornerRadiusBottomEnd="16dp"-->
                 <!--                    app:boxCornerRadiusBottomStart="16dp"-->
                 <!--                    app:boxCornerRadiusTopEnd="16dp"-->
@@ -643,7 +643,7 @@
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -672,7 +672,7 @@
                     android:fontFamily="sans-serif-light"
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -702,7 +702,7 @@
                     android:alpha="1"
                     android:fontFamily="sans-serif-light"
                     android:singleLine="true"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -731,7 +731,7 @@
                     android:alpha="1"
                     android:fontFamily="sans-serif-light"
                     android:layout_marginEnd="14sp"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -760,7 +760,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -790,7 +790,7 @@
                     android:alpha="1"
                     android:layout_marginEnd="14sp"
                     android:fontFamily="sans-serif-light"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
                     app:boxCornerRadiusBottomStart="16dp"
@@ -818,7 +818,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -848,7 +848,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -877,7 +877,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -907,7 +907,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
                     android:alpha="1"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:fontFamily="sans-serif-light"
                     android:visibility="gone"
                     app:boxCornerRadiusBottomEnd="16dp"
@@ -936,7 +936,7 @@
                     android:layout_marginStart="14sp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="14sp"
-                    android:textColorHint="#C0C0C0"
+                    android:textColorHint="#9A9C9E"
                     android:fontFamily="sans-serif-light"
                     android:alpha="1"
                     android:visibility="gone"
@@ -995,7 +995,7 @@
                     android:text="NOW UPLOAD"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
-                    android:textFontWeight="700"
+                    android:textFontWeight="500"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -1032,7 +1032,7 @@
             <!--                    android:text="Submit"-->
             <!--                    android:textAllCaps="true"-->
             <!--                    android:textColor="@color/white"-->
-            <!--                    android:textFontWeight="700"-->
+            <!--                    android:textFontWeight="500"-->
             <!--                    android:textSize="16sp"-->
             <!--                    android:textStyle="bold" />-->
 
@@ -1074,7 +1074,7 @@
                         android:layout_marginEnd="14sp"
                         android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1104,7 +1104,7 @@
                         android:layout_marginEnd="14sp"
                         android:visibility="gone"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1131,7 +1131,7 @@
                         android:layout_marginStart="14sp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="14sp"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:visibility="gone"
                         android:alpha="1"
@@ -1199,7 +1199,7 @@
                         android:fontFamily="sans-serif-light"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:textFontWeight="700"
+                        android:textFontWeight="500"
                         android:layout_height="wrap_content"/>
 
                     <LinearLayout
@@ -1248,7 +1248,7 @@
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1276,7 +1276,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1307,7 +1307,7 @@
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="14sp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1341,7 +1341,7 @@
                         android:layout_marginEnd="14sp"
                         android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1374,12 +1374,12 @@
                         android:layout_marginEnd="26dp"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:textFontWeight="700"
+                        android:textFontWeight="500"
                         android:fontFamily="sans-serif-light"
                         android:textStyle="bold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="PV Module Details(सौर पेनल विवरण)"/>
+                        android:text="PV Module Details (सौर पेनल विवरण)"/>
 
 
                     <LinearLayout
@@ -1468,7 +1468,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:fontFamily="sans-serif-light"
-                            android:textColorHint="#C0C0C0"
+                            android:textColorHint="#9A9C9E"
                             android:layout_marginStart="26dp"
                             android:layout_marginEnd="26dp"
                             android:alpha="1"
@@ -1504,7 +1504,7 @@
                         android:fontFamily="sans-serif-light"
                         android:layout_marginTop="16dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1536,7 +1536,7 @@
                         android:layout_marginTop="16dp"
                         android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1565,7 +1565,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1595,7 +1595,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginTop="15dp"
                         android:alpha="1"
-                        android:textFontWeight="700"
+                        android:textFontWeight="500"
                         android:fontFamily="sans-serif-light"
                         android:textSize="16sp"
                         android:textColor="#121212"
@@ -1644,7 +1644,7 @@
                         android:layout_marginStart="14sp"
                         android:layout_marginEnd="14sp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1675,7 +1675,7 @@
                         android:fontFamily="sans-serif-light"
                         android:layout_marginEnd="14sp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:visibility="gone"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1710,11 +1710,11 @@
                         android:textStyle="bold"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:textFontWeight="700"
+                        android:textFontWeight="500"
                         android:layout_width="match_parent"
                         android:fontFamily="sans-serif-light"
                         android:layout_height="wrap_content"
-                        android:text="Luminaire Details(ल्यूमिनेरी विवरण)"/>
+                        android:text="Luminaire Details (ल्यूमिनेरी विवरण)"/>
 
 
                     <LinearLayout
@@ -1803,7 +1803,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1837,7 +1837,7 @@
                         android:alpha="1"
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1867,7 +1867,7 @@
                         android:alpha="1"
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1899,7 +1899,7 @@
                         android:alpha="1"
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1930,7 +1930,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -1963,7 +1963,7 @@
                         android:visibility="gone"
                         android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -1996,11 +1996,11 @@
                         android:layout_marginStart="26dp"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:textFontWeight="700"
+                        android:textFontWeight="500"
                         android:fontFamily="sans-serif-light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Battery Details(बैटरी विवरण)"/>
+                        android:text="Battery Details (बैटरी विवरण)"/>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -2081,7 +2081,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -2119,7 +2119,7 @@
                         android:fontFamily="sans-serif-light"
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -2150,7 +2150,7 @@
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -2181,7 +2181,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
                         app:boxCornerRadiusTopEnd="16dp"
@@ -2211,7 +2211,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -2242,7 +2242,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -2273,7 +2273,7 @@
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
                         android:fontFamily="sans-serif-light"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:visibility="gone"
                         app:boxCornerRadiusBottomStart="16dp"
@@ -2302,7 +2302,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginEnd="26dp"
                         android:alpha="1"
-                        android:textColorHint="#C0C0C0"
+                        android:textColorHint="#9A9C9E"
                         android:fontFamily="sans-serif-light"
                         app:boxCornerRadiusBottomEnd="16dp"
                         android:visibility="visible"
@@ -2331,8 +2331,7 @@
                         android:layout_height="0dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginStart="26dp"
-                        android:layout_marginEnd="26dp"
-                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="20dp"
                         android:layout_weight="2"
                         android:orientation="horizontal"
                         android:visibility="visible">
@@ -2343,18 +2342,20 @@
                             android:layout_weight=".75"
                             android:layout_gravity="center_vertical"
                             android:fontFamily="sans-serif-light"
-                            android:text="Data Lock          (डेटा लॉक)"
+                            android:text="Data Lock                      (डेटा लॉक)"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:textFontWeight="500"
                             />
 
-                        <Switch
+                        <androidx.appcompat.widget.SwitchCompat
                             android:id="@+id/switch_ui"
                             android:layout_width="0dp"
                             android:layout_height="60dp"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1.25"
+                            android:minHeight="34dp"
+                            app:switchMinWidth="60dp"
                             android:visibility="visible"
                             tools:ignore="HardcodedText" />
 
@@ -2409,7 +2410,7 @@
                             android:minLines="7"
                             android:paddingBottom="20dp"
                             android:textColor="@color/white"
-                            android:textFontWeight="700"
+                            android:textFontWeight="500"
                             android:textSize="18sp" />
 
 
@@ -2502,7 +2503,7 @@
                         android:text="Submit"
                         android:fontFamily="sans-serif-light"
                         android:textColor="@color/white"
-                        android:textFontWeight="700"
+                        android:textFontWeight="500"
                         android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout>

@@ -407,6 +407,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
             val intent = Intent(this, LocationService::class.java)
             startService(intent)
         }
+        init()
         getModulesLuminary()
         getModulesSolar()
         getModulesPv()
@@ -562,7 +563,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
             }
         }
         takePermissions()
-        init()
+
         getVendor()
     }
 
@@ -910,7 +911,6 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
                 panchayatid = selectedObject.id.toString()
                 getWards(selectedObject.id.toString())
                 panch = selectedObject.name.toString()
-                Toast.makeText(this, "" + selectedObject.id.toString(), Toast.LENGTH_SHORT).show()
             }
             R.id.spin3 -> {
                 val selectedObject = spin3.selectedItem as WardModel.Data.Wards
