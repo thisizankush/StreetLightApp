@@ -151,7 +151,7 @@ interface RetrofitInstance {
             val retrofit = Retrofit.Builder()
                 .client(client)
                 .addConverterFactory(MoshiConverterFactory.create(moshi))
-                .baseUrl(Constants.DEV_BASE_URL)
+                .baseUrl(Constants.BASE_URL)
                 .build()
             return retrofit.create(RetrofitInstance::class.java)
 
